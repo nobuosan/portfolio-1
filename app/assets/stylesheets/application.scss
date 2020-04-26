@@ -1,21 +1,237 @@
 * {
   margin: 0;
   padding: 0;
-  color: white;
+  color: rgb(63, 63, 63);
 }
 
-.top {
-  background-image: url("bg_namikimichi1_sakura.jpg");
-  height: 600px;
-  width: 100%;
+.top-wrapper {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+}
+
+@font-face {
+  font-family: "myfont";
+  src: asset_url('fonts/logotypejp_corpmin.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "myfont2";
+  src: asset_url('fonts/nicokaku_v1.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.top-img {
+  background-image: url("sample.jpg");
   background-size: cover;
-  background-attachment: fixed;
+
+  width: 100%;
+}
+
+.top-text {
+  text-align: left;
+  padding: 350px 0 150px 20px;
+}
+
+.top-text p {
+  font-family: myfont;
+  font-size: 10px;
+}
+
+.top-text h1 {
+  font-size: 80px;
+  font-family: myfont;
 }
 
 nav h3 {
-  font-family: myfont;
+  font-family: myfont2;
+  color: #888;
 }
 
 nav .fas {
   color: #888;
+}
+
+.second-img {
+  background-image: url("man.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.second-text {
+  text-align: center;
+  padding: 200px 0;
+}
+
+.second-text h2 {
+  font-size: 80px;
+  font-family: myfont;
+  margin-bottom: 40px;
+}
+
+.second-text p {
+  font-family: myfont;
+}
+
+@media screen and (min-width: 970px) {
+  .carousel-item {
+    height: 500px;
+  }
+}
+
+
+.service-list {
+  /* background-color: #333; */
+  background-image: url("service-img.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: lighten;
+  padding: 50px;
+}
+
+.service-list h2 {
+  text-align: center;
+  font-family: myfont2;
+  font-size: 80px;
+}
+
+.service-img {
+  width: 100%;
+  padding: 30px;
+}
+
+.service-contents {
+  padding: 30px;
+}
+
+.third-text {
+  text-align: center;
+  padding: 50px;
+}
+
+.third-text h2 {
+  font-size: 80px;
+  font-family: myfont2;
+  margin-bottom: 40px;
+}
+
+.info {
+  border: 2px solid white;
+  margin: 40px;
+  padding: 20px 20px;
+}
+
+.icon {
+  font-size: 50px;
+  padding-bottom: 15px;
+}
+
+.icon h3 {
+  font-size: 35px;
+}
+
+footer {
+  background-color: #fff;
+  padding: 30px;
+  width: 100%;
+
+}
+
+.footer-title {
+  opacity: 0.8;
+}
+
+footer ul li {
+  list-style: none;
+
+}
+
+footer ul li a {
+  color: #aaa;
+  font-size: 15px;
+}
+
+footer ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright {
+  margin: 20px;
+}
+
+.copyright p {
+  text-align: center;
+  opacity: 0.5;
+}
+
+
+.view {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  float: left;
+  border: 10px solid #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 1px 2px #e6e6e6;
+  cursor: default;
+  background: #fff url(../images/bgimg.jpg) no-repeat center center
+}
+
+.view .mask,
+.view .content {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0
+}
+
+.view img {
+  display: block;
+  position: relative
+}
+
+.view h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 20px 0 0 0
+}
+
+.view p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #fff;
+  padding: 10px 20px 20px;
+  text-align: center
+}
+
+.view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000
+}
+
+.view a.info:hover {
+  box-shadow: 0 0 5px #000
 }

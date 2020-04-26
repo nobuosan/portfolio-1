@@ -4,16 +4,21 @@
     <title>Portfolios</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/075b338f98.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <div class ="container-fluid">
+    <div class ="container">
       <%= render partial: 'header' %>
-      <%= yield %>
     </div>
+    <div class ="wrapper">
+        <%= yield %>
+    </div>
+    <%= render partial: 'footer' %>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
 </html>
