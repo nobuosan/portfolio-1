@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.top {
+  background-image: url("bg_namikimichi1_sakura.jpg");
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav h3 {
+  font-family: myfont;
+}
+
+nav .fas {
+  color: #888;
+}
