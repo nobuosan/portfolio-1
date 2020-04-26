@@ -5,8 +5,33 @@
 }
 
 .top-wrapper {
-  margin-top: 30px;
-  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.sns {
+  color: #888;
+}
+
+nav h3 {
+  font-family: myfont2;
+  color: #888;
+}
+
+.nav-list {
+  margin: 20px 0;
+  text-align: center;
+  line-height: 50px;
+}
+
+
+nav .fas {
+  color: #888;
+}
+
+#nav a {
+  color: #888;
 }
 
 .wrapper {
@@ -47,17 +72,8 @@
   font-family: myfont;
 }
 
-nav h3 {
-  font-family: myfont2;
-  color: #888;
-}
-
-nav .fas {
-  color: #888;
-}
-
 .second-img {
-  background-image: image-url("man.jpg");
+
   background-size: cover;
 
 }
@@ -80,6 +96,12 @@ nav .fas {
 @media screen and (min-width: 970px) {
   .carousel-item {
     height: 500px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .nav-i {
+    border: 2px solid;
   }
 }
 
