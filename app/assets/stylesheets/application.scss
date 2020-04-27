@@ -1,17 +1,25 @@
 * {
   margin: 0;
   padding: 0;
-  color: rgb(63, 63, 63);
+  color: #888;
 }
 
 .top-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin: 100px 0 50px 0;
+  margin: 70px 0 50px 0;
+}
+
+.nv-s:hover {
+  text-decoration: none;
+  color: #888;
+}
+
+.sns:hover {
+  color: #888;
 }
 
 .top-wrapper h3 {
-  font-size: 60px;
   padding-left: 40px;
 }
 
@@ -30,9 +38,14 @@ nav h3 {
   line-height: 50px;
 }
 
-
 nav .fas {
   color: #888;
+}
+
+.nav-i {
+  color: #888;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 #nav a {
@@ -46,41 +59,48 @@ nav .fas {
 
 @font-face {
   font-family: "myfont";
-  src: asset_url('fonts/logotypejp_corpmin.ttf') format("truetype");
+  src: asset_url("fonts/logotypejp_corpmin.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 
   font-family: "myfont2";
-  src: asset_url('fonts/nicokaku_v1.ttf') format("truetype");
+  src: asset_url("fonts/nicokaku_v1.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 .top-img {
-  background-image: image-url("sample.jpg");
-  background-size: cover;
-  width: 100%;
+  background-image: image-url("futsal.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.top-img:hover {
+  opacity: 0.8;
 }
 
 .top-text {
   text-align: left;
-  padding: 350px 0 150px 20px;
+  padding: 350px 0 0px 20px;
 }
+
 
 .top-text p {
   font-family: myfont;
   font-size: 10px;
+  color: white;
 }
 
 .top-text h1 {
   font-size: 80px;
   font-family: myfont;
+  color: white;
 }
 
 .second-img {
-
   background-size: cover;
-
 }
 
 .second-text {
@@ -103,20 +123,20 @@ nav .fas {
     height: 500px;
     width: 100%;
   }
+
+
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
   .nav-i {
-    border: 2px solid black;
+    border: 2px solid;
   }
 }
 
-
 .service-list {
   /* background-color: #333; */
-  background-image: image-url("service-img.jpg");
   background-size: cover;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: white;
   background-blend-mode: lighten;
   padding: 50px;
 }
@@ -130,6 +150,7 @@ nav .fas {
 .service-img {
   width: 100%;
   padding: 30px;
+
 }
 
 .service-contents {
@@ -164,9 +185,8 @@ nav .fas {
 
 footer {
   background-color: #fff;
-  padding: 30px;
+  padding: 60px 0 30px 0;
   width: 100%;
-
 }
 
 .footer-title {
@@ -175,7 +195,6 @@ footer {
 
 footer ul li {
   list-style: none;
-
 }
 
 footer ul li a {
