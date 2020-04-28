@@ -79,7 +79,8 @@ nav .fas {
 
 .top-img {
   background-image: image-url("futsal.jpg");
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   opacity: 0.7;
   text-align: center;
