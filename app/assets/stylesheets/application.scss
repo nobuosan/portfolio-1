@@ -23,6 +23,14 @@
   padding-left: 40px;
 }
 
+.fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+.fa-github:hover {
+  color: #4078c0;
+}
+
 .sns {
   color: #888;
 }
@@ -71,10 +79,11 @@ nav .fas {
 
 .top-img {
   background-image: image-url("futsal.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.7;
   text-align: center;
+  padding: 10px auto;
 }
 
 .top-img:hover {
@@ -93,10 +102,22 @@ nav .fas {
   color: white;
 }
 
+#feature li {
+  list-style: none;
+}
+
+#feature ul {
+  text-align: center;
+}
+
 .top-text h1 {
   font-size: 80px;
   font-family: myfont;
   color: white;
+}
+
+.prof-img {
+  max-width: 400px;
 }
 
 .second-img {
@@ -105,13 +126,13 @@ nav .fas {
 
 .second-text {
   text-align: center;
-  padding: 200px 0;
+  padding: 60px 0 20px 0;
 }
 
-.second-text h2 {
-  font-size: 80px;
+.second-text h3 {
+  font-size: 50px;
   font-family: myfont;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
 }
 
 .second-text p {

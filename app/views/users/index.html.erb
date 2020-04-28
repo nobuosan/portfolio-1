@@ -1,19 +1,40 @@
-<header class ="container-fluid">
-    <div class="top-img">
-        <div class="top-text">
-            <h1>Portfolios</h1>
-            <p>のぶおのポートフォリオサイトです</p>
+<div class="wrapper">
+    <header >
+        <div class="top-img">
+            <div class="top-text">
+                <%# <h1>Portfolios</h1>
+                <p>のぶおのポートフォリオサイトです</p> %>
+            </div>
         </div>
-    </div>
-</header>
-<div class ="container-fluid">
-    <div class="second-img" id ="feature">
+    </header>
+    <div class="second-img container" id ="feature">
         <div class="second-text">
-            <h2>Feature</h2>
-            <p>make oneです。<br>「大学生のゼロイチ」を理念に掲げています。</p>
+            <h3>introduce</h3>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <ul>
+                    <li><p>ニックネーム：のぶお</p></li>
+                    <li><p>大学：鹿児島大学大学院　2年</p></li>
+                    <li><p>年齢：23歳</p></li>
+                    <li><p>身長：185cm</p></li>
+                    <li><p>趣味：グルメ/アプリ開発/動画編集/サッカー/...</p></li>
+                    <li><p>Skill：ruby / python / C / js /</p></li>
+                    <li><p>フレームワーク ：ruby on rails / tensorflow / Vue.js</p></li>
+                    <hr>
+                    <li><p> 団体活動 / フットサル全国準優勝 / イベント主催 / など<br>幅広く活動してきました
+                    <br>"エネルギー" と "やりきり力"には自信があります</p></li>
+                    <a href="https://twitter.com/nobuo_185cm" class =" sns" style="text-align:center;  font-size:30px;"><i class="fa fa-twitter "></i></span></a>
+                    <a href="https://github.com/nobuosan" class =" sns" style="text-align:center; padding-left:40px;  font-size:30px;"><i class="fab fa-github"></i><span class="sr-only"></span></a>
+                </ul>
+            </div>
+            <div class ="prof-img col-6 ">
+                <%= image_tag "nobu.jpg" ,alt:"none" ,class:"service-img rounded" %>
+            </div>
         </div>
     </div>
-        <div class="second-img" id="imformation">
+        <%# <div class="second-img" id= imformation">
             <div class="third-text">
             <h2>Imformation</h2>
             <div class="container">
@@ -38,79 +59,62 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> %>
 
         <div class ="service-list" id="service">
-        <h2>Service</h2>
+        <div class="second-text">
+            <h3>work</h3>
+            <hr>
+        </div>
             <div class="row">
-            <div class="col-md-6 order-md-1">
+                <div class="col-md-6 order-md-1">
+                    <%= image_tag "shinkan.png" ,alt:"" ,class:"service-img rounded" %>
+                </div>
+                <div class="col-md-6 service-contents order-md-2">
+                    <h3>新入生歓迎会まとめアプリ</h3>
+                    <hr color=white>
+                    <p>鹿児島大学で毎年行われる<br>"新入生歓迎会"のスケジュール管理をデジタル化すること<br>を目的としています。</p>
+                    <p>使用技術:ruby on rails / bootstrap / heroku</P>
+                    <a href="https://shinkan-app.herokuapp.com/" class="btn btn-outline-secondary" tabindex="-1" role="button" >新歓まとめサイトへ</a>
+                </div>
 
-                <%= image_tag "service1.jpg" ,alt:"service1" ,class:"service-img rounded" %>
-            </div>
-            <div class="col-md-6 service-contents order-md-2">
-                <h3>Service1</h3>
-                <hr color=white>
-                <p>パソコンかたかた</p>
-                <a href="#" class="btn btn-outline-light btn-outline-light btn-lg " tabindex="-1" role="button" >KataKata link</a>
-            </div>
+                <div class="col-md-6 order-md-4">
+                    <%= image_tag "memo.png" ,alt:"" ,class:"service-img rounded" %>
+                </div>
+                <div class="col-md-6 service-contents order-md-3">
+                    <h3>Memo管理アプリ</h3>
+                    <hr color=white>
+                    <p>メモを新規作成・編集・削除できるCRUD処理を実装しました</p>
+                    <p>使用技術:ruby on rails / bootstrap / heroku</P>
 
-            <div class="col-md-6 order-md-4">
-                <%= image_tag "service2.jpg" ,alt:"service2" ,class:"service-img rounded" %>
-            </div>
-            <div class="col-md-6 service-contents order-md-3">
-                <h3>Service2</h3>
-                <hr color=white>
-                <p>パソコンかたかた</p>
-                <a href="#" class="btn btn-outline-light btn-outline-light btn-lg " tabindex="-1" role="button" >KataKata link</a>
-            </div>
-            <div class="col-md-6 order-md-5">
-                <%= image_tag "service3.jpg" ,alt:"service3" ,class:"service-img rounded" %>
-            </div>
-            <div class="col-md-6 service-contents order-md-6">
-                <h3>Service3</h3>
-                <hr color=white>
-                <p>パソコンかたかた</p>
-                <a href="#" class="btn btn-outline-light btn-outline-light btn-lg " tabindex="-1" role="button" >KataKata link</a>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div id="carouselExampleIndicators" class="carousel slide carousel-original" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <%= image_tag "slide01.jpg" ,class:"d-block w-100" ,alt:"no picture"%>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>作品１</h5>
-                    <p>夕陽</p>
+                    <a href="https://nobuo0827-memo.herokuapp.com/" class="btn btn-outline-secondary" tabindex="-1" role="button" >Memo appへ</a>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <%= image_tag "slide02.jpg", class:"d-block w-100" ,alt:"no picture" %>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>作品２</h5>
-                    <p>空</p>
+                <div class="col-md-6 order-md-5">
+                    <%= image_tag "youtube.png" ,alt:"service3" ,class:"service-img rounded" %>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <%= image_tag "slide03.jpg",class:"d-block w-100" ,alt:"no picture" %>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>作品３</h5>
-                    <p>山</p>
+                <div class="col-md-6 service-contents order-md-6">
+                    <h3><span><i class="fab fa-youtube"></i>  </span>  youtube</h3>
+                    <hr color=white>
+                    <p>鹿児島の学生の"ゼロイチ"を目標とした動画メディアです</p>
+                    <p>人に影響を与えるには”信頼が”必要と考え、基盤づくりとしてしてエンタメのコンテンツとなっています</p>
+                    <br>
+                    <hr color=white>
+                    <p>使用技術: Premier pro / After effects / Photoshop / Illustrator</p>
+                    <a href="https://www.youtube.com/channel/UCvKqqRkT_14HudyVbCDRfgQ" class="btn btn-outline-secondary" tabindex="-1" role="button" >Youtubeサイトへ</a>
+
+                </div>
+
+                <div class="col-md-6 order-md-8">
+                    <%= image_tag "todo.png" ,alt:"" ,class:"service-img rounded" %>
+                </div>
+                <div class="col-md-6 service-contents order-md-7">
+                    <h3>To do app</h3>
+                    <hr color=white>
+                    <p>todoリストを管理するアプリケーション</p>
+                    <p>使用技術:ruby on rails / bootstrap / heroku</P>
+                    <a href="https://task-nobuo.herokuapp.com/" class="btn btn-outline-secondary" tabindex="-1" role="button" >todo appへ</a>
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        </div>
+
 </div>
