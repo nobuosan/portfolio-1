@@ -7,11 +7,14 @@
             </div>
         </div>
     </header>
+    <div class="catch-frase">
+        <h2 >初めまして、<br>巨人です・・・</h2>
+    </div>
     <div class="second-img container" id ="feature">
-        <div class="second-text">
+        <%# <div class="second-text">
             <h3>introduce</h3>
             <hr>
-        </div>
+        </div> %>
         <div class="row">
             <div class="prof-text col-6">
                 <ul>
@@ -23,7 +26,8 @@
                     <li><p>Skill：ruby / python / C / js /</p></li>
                     <hr>
                     <li><p> 団体活動 / フットサル全国準優勝 / イベント主催 / など<br>幅広く活動してきました
-                    <br>"エネルギー" と "やりきり力"には自信があります</p></li>
+                    <br>"行動力" と "やりきり力"には特に自信があります</p></li>
+                    <p style="text-align:right; padding-right:60px;"><a href="/profile">詳しく見る...</a></p>
                 </ul>
             </div>
             <div class ="prof-img col-6 ">
@@ -35,34 +39,40 @@
             </div>
         </div>
     </div>
-    <div class ="service-list" id="service">
+    <div class ="service-list container" id="service">
         <div class="second-text">
             <h3>work</h3>
             <hr>
         </div>
         <div class="row">
-        <a class="work-section col-12" href = "https://shinkan-app.herokuapp.com/" >
             <div class="col-md-12 col-lg-6 order-md-1 order-lg-1 ">
                 <%= image_tag "shinkan.png" ,alt:"" ,class:"service-img rounded" %>
             </div>
-            <div class="col-md-12 col-lg-6 service-contents order-md-2 order-lg-2">
+            <div class="col-md-12 col-lg-6 service-contents order-md-2 order-lg-2 rounded">
                 <h3>新入生歓迎会まとめアプリ</h3>
                 <hr color=white>
+                <br>
                 <p>鹿児島大学で毎年行われる<br>"新入生歓迎会"のスケジュール管理をデジタル化すること<br>を目的としています。</p>
-                <p>使用技術:ruby on rails / bootstrap / heroku</P>
+                <br>
+                <hr>
+                <p>使用技術:ruby on rails / bootstrap / heroku</p>
+                <hr>
+                <br>
                 <a href="https://shinkan-app.herokuapp.com/" class="btn btn-outline-secondary" target="_blank" rel="noopener" tabindex="-1" role="button" >新歓まとめサイトへ</a>
             </div>
-        </a>
-
             <div class="col-md-12 col-lg-6 order-md-3 order-lg-4">
                 <%= image_tag "memo.png" ,alt:"" ,class:"service-img rounded" %>
             </div>
             <div class="col-md-12 col-lg-6 service-contents order-md-4 order-lg-3">
                 <h3>Memo管理アプリ</h3>
                 <hr color=white>
+                <br>
                 <p>メモを新規作成・編集・削除できるCRUD処理を実装しました</p>
-                <p>使用技術:ruby on rails / bootstrap / heroku</P>
-
+                <br>
+                <hr>
+                <p>使用技術:ruby on rails / bootstrap / heroku</p>
+                <hr>
+                <br>
                 <a href="https://nobuo0827-memo.herokuapp.com/" class="btn btn-outline-secondary" target="_blank" rel="noopener" tabindex="-1" role="button" >Memo appへ</a>
             </div>
             <div class="col-md-12 col-lg-6 order-md-5 order-lg-5">
@@ -71,25 +81,32 @@
             <div class="col-md-12 col-lg-6 service-contents order-md-6 order-lg-6">
                 <h3><span><i class="fab fa-youtube"></i>  </span>  youtube</h3>
                 <hr color=white>
+                <br>
                 <p>鹿児島の学生の"ゼロイチ"を目標とした動画メディアです</p>
                 <p>人に影響を与えるには”信頼が”必要と考え、基盤づくりとしてしてエンタメのコンテンツとなっています</p>
                 <br>
                 <hr color=white>
                 <p>使用技術: Premier pro / After effects / Photoshop / Illustrator</p>
+                <hr>
+                <br>
                 <a href="https://www.youtube.com/channel/UCvKqqRkT_14HudyVbCDRfgQ" class="btn btn-outline-secondary"  target="_blank" rel="noopener" tabindex="-1" role="button" >Youtubeサイトへ</a>
-
             </div>
-
             <div class="col-md-12 col-lg-6 order-md-7 order-lg-8">
                 <%= image_tag "todo.png" ,alt:"" ,class:"service-img rounded" %>
             </div>
-            <div class="col-md-12 col-lg-6 service-contents order-md-8 order-lg-7">
-                <h3>To do app</h3>
-                <hr color=white>
+            <div class="col-md-12 col-lg-6 service-contents order-md-8 order-lg-7">
+                <h3><span><i class="fas fa-list-ul"></i></span> To do app</h3>
+                <hr style="color=white">
+                <br>
                 <p>todoリストを管理するアプリケーション</p>
-                <p>使用技術:ruby on rails / bootstrap / heroku</P>
+                <br>
+                <hr color=white>
+                <p>使用技術:ruby on rails / bootstrap / heroku</p>
+                <hr>
+                <br>
                 <a href="https://task-nobuo.herokuapp.com/" class="btn btn-outline-secondary" target="_blank" rel="noopener" tabindex="-1" role="button" >todo appへ</a>
             </div>
+
         </div>
     </div>
 </div>
