@@ -35,3 +35,24 @@
 .prof-detail h3 {
   box-shadow: 2px 2px 1px 0 #bbb;
 }
+
+.passion {
+  font-size: 35px;
+  text-align: center;
+}
+
+.passionlist {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px auto;
+  list-style: none;
+  box-shadow: 2px 2px 1px 0 #bbb;
+}
+
+.passionlist li {
+  list-style-type: none;
+}
+
+.prof-detail li {
+  font-size: 30px;
+}

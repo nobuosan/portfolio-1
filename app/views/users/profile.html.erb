@@ -18,7 +18,7 @@
                     <hr>
                     <li><p> 団体活動 / フットサル全国準優勝 / イベント主催 / など<br>幅広く活動してきました
                     <br>"行動力" と "やりきり力"には特に自信があります</p></li>
-                    <p style="text-align:right; padding-right:60px;"><a href="/profile">詳しく見る...</a></p>
+
                 </ul>
             </div>
             <div class ="prof-img col-6 ">
@@ -30,26 +30,144 @@
             </div>
         </div>
     </div>
-    <div class ="container prof-detail">
-        <div class="top-prof">
-            <h3>はじめに</h3>
-<%
-  text =<<~TEXT
-    # 大見出し
-    ## 中見出し
-    ### 小見出し
-  TEXT
- %>
-<%= markdown(text).html_safe %>
+    <div class ="service-list container prof-detail" id="service">
+        <div class="second-text">
+            <h3>大学でやってきたこと</h3>
         </div>
-        <div class="junior-high-school">
-            <h3>中学</h3>
+        <h4 class="passion">熱中したことを４つ挙げるならばこんな感じです</h4>
+        <div class="passionlist">
+            <ul>
+                <li>フットサル</li>
+                <li>学生団体①</li>
+                <li>学生団体②</li>
+                <li>情報発信</li>
+            </ul>
         </div>
-        <div class="college">
-            <h3>大学</h3>
-        </div>
-        <div class="high-school">
-            <h3>高校</h3>
-        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 col-lg-6 order-md-1 order-lg-1 ">
+                <%= image_tag "zee.jpg" ,alt:"" ,class:"service-img rounded" %>
+            </div>
+            <div class="col-md-12 col-lg-6 service-contents order-md-2 order-lg-2 rounded">
+                <h3>大学フットサル</h3>
+                <hr color=white>
+                <br>
+                <p>限られた環境で主体性の高いメンバーが集まり楽しむことをモットーに活動</p>
+                <br>
+                <hr>
+                <p>結果：全国大会三度出場、一度準優勝(九州優勝は鹿児島県初)
+                <p>期間：大学1年冬〜大学院1年春</p>
+                <hr>
+                <br>
+                <a href="https://kagoshima-univ-zee-futsal.jimdofree.com/" class="btn btn-outline-secondary" target="_blank" rel="noopener" tabindex="-1" role="button" >ホームページへ</a>
+            </div>
+            <div class="col-md-12 col-lg-6 order-md-3 order-lg-4">
+                <%= image_tag "orefes.jpg" ,alt:"" ,class:"service-img rounded" %>
+            </div>
+            <div class="col-md-12 col-lg-6 service-contents order-md-4 order-lg-3">
+                <h3>学生団体YOUTH SENSE</h3>
+                <hr color=white>
+                <br>
+                <p>"鹿児島から夢追い人を創出する"をビジョンに掲げ、活動</p>
+                <p>内容：CAFE,BAR経営 / イベントでのコーヒー出店 /<br>就活イベント企画運営 / ECサイト運営 / ...</p>
+                <p>写真は私が主催したイベントの様子(130人来客）<br>スポンサーや出店の営業から運営まで行った</p>
+                <hr>
+                <p>期間：大学3年9月〜大学院1年１0月</p>
+                <hr>
+                <br>
+                <a href="https://youthsense-coffee.com/" class="btn btn-outline-secondary" target="_blank" rel="noopener" tabindex="-1" role="button" >ホームページへ  </a>
+            </div>
+            <div class="col-md-12 col-lg-6 order-md-5 order-lg-5">
+                <%= image_tag "youtube.png" ,alt:"service3" ,class:"service-img rounded" %>
+            </div>
+            <div class="col-md-12 col-lg-6 service-contents order-md-6 order-lg-6">
+                <h3><span><i class="fab fa-youtube"></i>  </span>  学生団体 make one</h3>
+                <hr color=white>
+                <br>
+                <p>鹿児島の学生の"ゼロイチ"を目標とした動画メディアを立ち上げ。</p>
+                <p>人に影響を与えるには”信頼が”必要と考え、基盤づくりとしてしてエンタメのコンテンツとなっています</p>
+                <p>戦略：エンタメで信用得る → 意識の高いコンテンツへ</p>
+                <hr color=white>
+                <p>期間：大学院1年秋〜</p>
+                <hr>
+                <br>
+                <a href="https://www.youtube.com/channel/UCvKqqRkT_14HudyVbCDRfgQ" class="btn btn-outline-secondary"  target="_blank" rel="noopener" tabindex="-1" role="button" >Youtubeサイトへ</a>
+            </div>
+            <div class="col-md-12 col-lg-6 order-md-7 order-lg-8">
+                <%= image_tag "twitter.jpg" ,alt:"" ,class:"service-img rounded" %>
+            </div>
+            <div class="col-md-12 col-lg-6 service-contents order-md-8 order-lg-7">
+                <h3><span><i class="fa fa-twitter"></i></span> 情報発信</h3>
+                <hr style="color=white">
+                <br>
+                <p>将来について考えた時自分の未知さを知り、<br>情報のインプット＆アウトプットを開始</p>
+                <p>すごい人がいればアポイントメントを取り会いに行ったり、収益化、マーケティングの勉強を行った
+                <br>
+                <hr color=white>
+                <p>期間：大学3年5月〜</p>
+                <hr>
+                <br>
+                <a href="https://twitter.com/nobuo_185cm" class="btn btn-outline-secondary" target="_blank" rel="noopener" tabindex="-1" role="button" ><span><i class="fa fa-twitter"></i></span> sssTwitterへ</a>
+            </div>
     </div>
+    <div class="container prof-detail">
+        <div class="second-text">
+            <h3>余談</h3>
+        </div>
+        <%
+        text =<<~TEXT
+            今でこそ国立大学にいますが、
+            **中学生まではサッカー一筋**で、国体強化指定選手や、GKキャンプにも呼ばれたり
+            サッカーで生きて行こうとも考えていました。
+            (もちろん勉強はできません笑)
+
+            そんな人間が普通校に進学し国立大学に行った
+            その理由は
+            **「安定志向です。」**
+            その安定思考と、内側に秘めたエネルギーが葛藤していました。
+
+            したいけどビビってしまう。
+            何かしたいけど、周りが・・
+            そんな葛藤の中いろんな事に稜線してきました。
+
+            かなり簡単ですが下にまとめています。（中高生）
+        TEXT
+        %>
+        <%= markdown(text).html_safe %>
+        <br>
+        <br>
+            <div class="high-school">
+                <h3>高校</h3>
+                    <%text =<<~TEXT
+                        高校入学後は、
+                        サッカーの道を進まなかったことを **かなり悔やみました**
+                        勉強はそこそこ
+                        部活に振り切っていました。
+
+                        クラスに一人入る明るいやつでした
+                                    TEXT
+                                     %>
+
+                    <%= markdown(text).html_safe %>
+            </div>
+            <br>
+            <br>
+            <div class="junior-high-school">
+                <h3>中学</h3>
+                        <%text =<<~TEXT
+                            本当にサッカー三昧
+                            学校に行ってサッカーして帰ってご飯食べて寝る。
+
+                            ただ、
+                            **間違いなく人生で一番熱中していました**
+                            大会では何度も優勝し、個人でも県の国体強化選手になったり、代表クラスが来る合宿に参加したり・・・
+
+
+                            (写真は流石にありません・・・。)
+                                        TEXT
+                        %>
+                        <%= markdown(text).html_safe %>
+            </div>
+        </div>
 </header>
