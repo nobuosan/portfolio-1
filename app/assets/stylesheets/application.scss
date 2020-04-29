@@ -5,7 +5,11 @@
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 35px;
 }
 
 .top-wrapper {
@@ -21,18 +25,28 @@ p {
 
 .sns:hover {
   color: #888;
+  filter: drop-shadow(5px 5px 5px #6e6e6e);
 }
 
 .top-wrapper h3 {
   padding-left: 40px;
 }
 
-.fa-twitter:hover {
+.fa-twitter {
   color: #1DA1F2;
 }
 
-.fa-github:hover {
+.fa-twitter:hover {
+  opacity: 0.8;
+  filter: drop-shadow(5px 5px 5px #6e6e6e);
+}
+
+.fa-github {
   color: #4078c0;
+}
+
+.fa-github:hover {
+  opacity: 0.8;
 }
 
 .sns {
@@ -175,7 +189,7 @@ nav .fas {
   background-size: cover;
   background-color: white;
   background-blend-mode: lighten;
-  padding: 50px;
+
 }
 
 .service-list h2 {
@@ -190,9 +204,26 @@ nav .fas {
 
 }
 
+.service-img {
+  filter: drop-shadow(5px 5px 5px #4e4e4e);
+}
+
 .service-contents {
   padding: 30px;
+  text-align: center;
 }
+
+.btn-outline-secondary {
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-outline-secondary {
+  text-align: right;
+  color: rgb(80, 80, 80);
+  font-size: 20px;
+}
+
 
 .third-text {
   text-align: center;
