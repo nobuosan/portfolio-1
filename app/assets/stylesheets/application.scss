@@ -18,6 +18,10 @@ h3 {
   margin: 70px 0 50px 0;
 }
 
+.top-wrapper h1 {
+  font-size: 60px;
+}
+
 .nv-s:hover {
   text-decoration: none;
   color: #888;
@@ -51,6 +55,7 @@ h3 {
 
 .sns {
   color: #888;
+  font-size: 30px;
 }
 
 nav h3 {
@@ -76,6 +81,7 @@ nav .fas {
 
 #nav a {
   color: #888;
+  font-size: 30px
 }
 
 .wrapper {
@@ -112,6 +118,7 @@ nav .fas {
 .catch-frase h2 {
   font-family: myfont;
   font-size: 50px;
+  line-height: normal;
 }
 
 .top-img {
@@ -172,8 +179,6 @@ nav .fas {
   max-width: 400px;
 }
 
-.second-img {}
-
 .second-text {
   text-align: center;
   padding: 60px 0 20px;
@@ -189,18 +194,14 @@ nav .fas {
   font-family: myfont;
 }
 
-@media screen and (min-width: 970px) {
-  .carousel-item {
-    height: 500px;
-    width: 100%;
-  }
-
-
-}
-
 @media screen and (max-width: 760px) {
   .nav-i {
     border: 2px solid;
+  }
+
+  .sns {
+    font-size: 40px;
+    padding-top: 20px;
   }
 }
 
@@ -227,7 +228,7 @@ nav .fas {
 .service-contents {
   padding: 30px auto;
   margin-bottom: 20px;
-  box-shadow: 2px 2px 2px 0.5px #bbb;
+  box-shadow: 2px 2px 1px 0 #bbb;
 }
 
 .service-img {

@@ -7,7 +7,7 @@
             <hr>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="prof-text col-6">
                 <ul>
                     <li><p>ニックネーム：のぶお</p></li>
                     <li><p>大学：鹿児島大学大学院　2年</p></li>
@@ -15,27 +15,41 @@
                     <li><p>身長：185cm</p></li>
                     <li><p>趣味：グルメ/アプリ開発/動画編集/サッカー/...</p></li>
                     <li><p>Skill：ruby / python / C / js /</p></li>
-                    <li><p>フレームワーク ：ruby on rails / tensorflow / Vue.js</p></li>
                     <hr>
                     <li><p> 団体活動 / フットサル全国準優勝 / イベント主催 / など<br>幅広く活動してきました
-                    <br>"エネルギー" と "やりきり力"には自信があります</p></li>
-                    <a href="https://twitter.com/nobuo_185cm" class =" sns" style="text-align:center;  font-size:30px;"><i class="fa fa-twitter "></i></span></a>
-                    <a href="https://github.com/nobuosan" class =" sns" style="text-align:center; padding-left:40px;  font-size:30px;"><i class="fab fa-github"></i><span class="sr-only"></span></a>
+                    <br>"行動力" と "やりきり力"には特に自信があります</p></li>
+                    <p style="text-align:right; padding-right:60px;"><a href="/profile">詳しく見る...</a></p>
                 </ul>
             </div>
             <div class ="prof-img col-6 ">
                 <%= image_tag "nobu.jpg" ,alt:"none" ,class:"service-img rounded" %>
+                <div class="icon-sns" >
+                    <a href="https://twitter.com/nobuo_185cm" class =" sns" style="text-align:center;"><i class="fa fa-twitter "></i></span></a>
+                    <a href="https://github.com/nobuosan" class =" sns" style="text-align:center; padding-left:40px;"><i class="fab fa-github"></i><span class="sr-only"></span></a>
+                </div>
             </div>
         </div>
     </div>
-    <div class ="container">
+    <div class ="container prof-detail">
         <div class="top-prof">
-        </div>
-        <div class="college">
-        </div>
-        <div class="high-school">
+            <h3>はじめに</h3>
+<%
+  text =<<~TEXT
+    # 大見出し
+    ## 中見出し
+    ### 小見出し
+  TEXT
+ %>
+<%= markdown(text).html_safe %>
         </div>
         <div class="junior-high-school">
+            <h3>中学</h3>
+        </div>
+        <div class="college">
+            <h3>大学</h3>
+        </div>
+        <div class="high-school">
+            <h3>高校</h3>
         </div>
     </div>
 </header>
