@@ -18,7 +18,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 # markdown
-gem 'redcarpet', '~> 2.3.0'
+gem 'redcarpet', '~> 3.5.1'
 # シンタックスハイライト
 gem 'coderay'
 # Reduces boot times through caching; required in config/boot.rb
